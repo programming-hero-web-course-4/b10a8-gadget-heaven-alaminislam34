@@ -4,10 +4,12 @@ import Navbar from "../Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="max-w-6xl mx-auto">
-      <Navbar />
-      <section className="w-11/12 mx-auto">
-        <Outlet />
+    <div>
+      <section className="max-w-6xl mx-auto">
+        <Navbar />
+        <section className="w-11/12 mx-auto">
+          <Outlet />
+        </section>
       </section>
       <Footer />
     </div>

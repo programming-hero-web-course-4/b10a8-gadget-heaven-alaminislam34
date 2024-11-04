@@ -3,7 +3,7 @@
     "product_id": 1,
     "product_title": "iPhone 13 Pro Max",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Iphone",
     "price": 1099,
     "description": "High-end smartphone with advanced camera and powerful performance.",
     "specification": [
@@ -19,7 +19,7 @@
     "product_id": 2,
     "product_title": "Samsung Galaxy S21 Ultra",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1199,
     "description": "Premium Android phone with stunning camera and display.",
     "specification": [
@@ -35,7 +35,7 @@
     "product_id": 3,
     "product_title": "Google Pixel 6 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 899,
     "description": "Flagship Google phone with excellent camera and clean Android experience.",
     "specification": [
@@ -51,7 +51,7 @@
     "product_id": 4,
     "product_title": "OnePlus 9 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 969,
     "description": "High-performance phone with fast charging and smooth display.",
     "specification": [
@@ -67,7 +67,7 @@
     "product_id": 5,
     "product_title": "Sony Xperia 1 III",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1299,
     "description": "Premium phone with excellent camera and 4K display.",
     "specification": [
@@ -83,7 +83,7 @@
     "product_id": 6,
     "product_title": "Xiaomi Mi 11 Ultra",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 899,
     "description": "High-end phone with powerful specs and great camera performance.",
     "specification": [
@@ -99,7 +99,7 @@
     "product_id": 7,
     "product_title": "Huawei P50 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1199,
     "description": "Premium smartphone with exceptional camera capabilities.",
     "specification": [
@@ -115,7 +115,7 @@
     "product_id": 8,
     "product_title": "Oppo Find X3 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1149,
     "description": "Stylish smartphone with powerful performance and great display.",
     "specification": [
@@ -131,7 +131,7 @@
     "product_id": 9,
     "product_title": "Asus ROG Phone 5",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 999,
     "description": "Gaming smartphone with high refresh rate and powerful battery.",
     "specification": [
@@ -147,7 +147,7 @@
     "product_id": 10,
     "product_title": "Realme GT Master Edition",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 399,
     "description": "Affordable phone with impressive design and specs.",
     "specification": [
@@ -163,7 +163,7 @@
     "product_id": 11,
     "product_title": "iPhone 12 Mini",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Iphone",
     "price": 699,
     "description": "Compact smartphone with powerful features.",
     "specification": [
@@ -179,7 +179,7 @@
     "product_id": 12,
     "product_title": "Samsung Galaxy Note 20 Ultra",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1299,
     "description": "Premium phone with S Pen and excellent camera.",
     "specification": [
@@ -195,7 +195,7 @@
     "product_id": 13,
     "product_title": "Nokia XR20",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 549,
     "description": "Durable smartphone built to withstand extreme conditions.",
     "specification": [
@@ -211,7 +211,7 @@
     "product_id": 14,
     "product_title": "Motorola Edge 20 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 699,
     "description": "High-performance phone with excellent display and camera.",
     "specification": [
@@ -227,7 +227,7 @@
     "product_id": 15,
     "product_title": "Xiaomi Redmi Note 10 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 299,
     "description": "Affordable smartphone with impressive specs.",
     "specification": [
@@ -243,7 +243,7 @@
     "product_id": 16,
     "product_title": "Vivo X60 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 799,
     "description": "Flagship phone with advanced camera technology.",
     "specification": [
@@ -259,7 +259,7 @@
     "product_id": 17,
     "product_title": "Sony Xperia 5 II",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 949,
     "description": "Compact premium phone with 4K video capabilities.",
     "specification": [
@@ -275,7 +275,7 @@
     "product_id": 18,
     "product_title": "LG Wing 5G",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 999,
     "description": "Unique dual-screen phone with swivel design.",
     "specification": [
@@ -291,7 +291,7 @@
     "product_id": 19,
     "product_title": "Huawei Mate 40 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 1099,
     "description": "High-end phone with cutting-edge camera features.",
     "specification": [
@@ -307,7 +307,7 @@
     "product_id": 20,
     "product_title": "Realme Narzo 30",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Phone",
+    "category": "Phones",
     "price": 179,
     "description": "Budget-friendly phone with good performance and battery life.",
     "specification": [
@@ -323,7 +323,7 @@
     "product_id": 21,
     "product_title": "iPad Pro 12.9",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "MacBook",
     "price": 1099,
     "description": "High-end tablet with powerful performance and large display.",
     "specification": [
@@ -339,7 +339,7 @@
     "product_id": 22,
     "product_title": "Samsung Galaxy Tab S7+",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 849,
     "description": "Premium Android tablet with stunning display and S Pen support.",
     "specification": [
@@ -355,7 +355,7 @@
     "product_id": 23,
     "product_title": "Microsoft Surface Pro 8",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 899,
     "description": "Versatile 2-in-1 tablet with powerful specs for productivity.",
     "specification": [
@@ -371,7 +371,7 @@
     "product_id": 24,
     "product_title": "Lenovo Tab P11 Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 499,
     "description": "Affordable Android tablet with high-resolution display.",
     "specification": [
@@ -387,7 +387,7 @@
     "product_id": 25,
     "product_title": "Amazon Fire HD 10",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 149,
     "description": "Budget-friendly tablet for entertainment and basic use.",
     "specification": [
@@ -403,7 +403,7 @@
     "product_id": 26,
     "product_title": "MacBook Pro 16",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "MacBook",
     "price": 2499,
     "description": "High-performance laptop with large display and advanced graphics.",
     "specification": [
@@ -419,7 +419,7 @@
     "product_id": 27,
     "product_title": "Dell XPS 13",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 1299,
     "description": "Ultra-slim laptop with excellent display and performance.",
     "specification": [
@@ -435,7 +435,7 @@
     "product_id": 28,
     "product_title": "HP Spectre x360",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 1399,
     "description": "Convertible laptop with great design and battery life.",
     "specification": [
@@ -451,7 +451,7 @@
     "product_id": 29,
     "product_title": "Asus ROG Zephyrus G14",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 1599,
     "description": "Gaming laptop with powerful specs and compact design.",
     "specification": [
@@ -468,7 +468,7 @@
     "product_id": 30,
     "product_title": "Lenovo ThinkPad X1 Carbon",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 1499,
     "description": "Business laptop with excellent build quality and performance.",
     "specification": [
@@ -484,7 +484,7 @@
     "product_id": 31,
     "product_title": "Microsoft Surface Laptop 4",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 999,
     "description": "Stylish and portable laptop with a clean design.",
     "specification": [
@@ -500,7 +500,7 @@
     "product_id": 32,
     "product_title": "AirPods Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Earbuds",
+    "category": "Accessories",
     "price": 249,
     "description": "High-quality wireless earbuds with noise cancellation.",
     "specification": [
@@ -515,7 +515,7 @@
     "product_id": 33,
     "product_title": "Samsung Galaxy Buds Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Earbuds",
+    "category": "Accessories",
     "price": 199,
     "description": "Premium earbuds with excellent sound and ANC.",
     "specification": [
@@ -530,7 +530,7 @@
     "product_id": 34,
     "product_title": "Sony WF-1000XM4",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Earbuds",
+    "category": "Accessories",
     "price": 279,
     "description": "Industry-leading noise cancellation and sound quality.",
     "specification": ["ANC", "High-res audio", "8 hours battery life"],
@@ -540,8 +540,8 @@
   {
     "product_id": 35,
     "product_title": "Jabra Elite 85t",
-    "product_image": "hhttps://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Earbuds",
+    "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
+    "category": "Accessories",
     "price": 229,
     "description": "Comfortable and durable earbuds with customizable ANC.",
     "specification": ["ANC", "Wireless charging", "Adjustable ANC levels"],
@@ -552,7 +552,7 @@
     "product_id": 36,
     "product_title": "Bose QuietComfort Earbuds",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Earbuds",
+    "category": "Accessories",
     "price": 279,
     "description": "Premium earbuds with powerful noise cancellation.",
     "specification": [
@@ -567,7 +567,7 @@
     "product_id": 37,
     "product_title": "iPad Air",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "MacBook",
     "price": 599,
     "description": "Lightweight tablet with powerful performance and vibrant display.",
     "specification": [
@@ -583,7 +583,7 @@
     "product_id": 38,
     "product_title": "Huawei MatePad Pro",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 799,
     "description": "High-performance tablet with a sleek design and powerful features.",
     "specification": [
@@ -599,7 +599,7 @@
     "product_id": 39,
     "product_title": "Google Pixel Slate",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Tablet",
+    "category": "Tablets",
     "price": 799,
     "description": "Chromebook tablet with powerful specs for productivity.",
     "specification": [
@@ -615,7 +615,7 @@
     "product_id": 40,
     "product_title": "Asus Chromebook Flip",
     "product_image": "https://i.ibb.co.com/C15tY4X/iphone.webp",
-    "category": "Laptop",
+    "category": "Laptops",
     "price": 549,
     "description": "Versatile 2-in-1 Chromebook with flexible design.",
     "specification": [
