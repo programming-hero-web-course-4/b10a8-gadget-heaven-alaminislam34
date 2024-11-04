@@ -3,8 +3,8 @@ import banner from "../assets/banner.jpg";
 const Banner = () => {
   return (
     <section className="">
-      <div className="bg-[#9538E2] rounded-b-xl flex justify-center items-center lg:h-[500px] md:h-[450px] h-[80vh]">
-        <div className="text-center lg:my-12 md:m-9 my-4 lg:mx-12 space-y-4 lg:space-y-6 ">
+      <div className="bg-[#9538E2] rounded-b-xl flex justify-center pt-12 lg:h-[450px] md:h-[400px] h-[80vh]">
+        <div className="text-center space-y-4 lg:space-y-6">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white ">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h1>
@@ -18,8 +18,12 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="p-6 rounded-xl h-[60vh] bg-white/30 backdrop-blur-xl lg:w-7/12 md:w-8/12 w-10/12 mx-auto relative md:-top-28 -top-20">
-        <img className="w-full h-full rounded-xl" src={banner} alt="" />
+      <div className="p-6 rounded-xl h-[350px] bg-white/30 backdrop-blur-xl lg:w-7/12 md:w-8/12 w-10/12 mx-auto relative md:-top-28 -top-20">
+        <img
+          className="w-full h-full object-cover rounded-xl"
+          src={banner}
+          alt=""
+        />
       </div>
     </section>
   );

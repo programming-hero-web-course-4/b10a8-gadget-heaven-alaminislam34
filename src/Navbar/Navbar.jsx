@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useContext, useEffect, useState } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { RiMenu2Fill } from "react-icons/ri";
@@ -7,7 +8,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ProductContext } from "../Pages/ProductContext";
 
 const Navbar = () => {
-  const { products, liked, total } = useContext(ProductContext);
+  const { products, liked, total, id } = useContext(ProductContext);
   const [active, setActive] = useState(false);
   const [isTrue, setTrue] = useState(false);
   const location = useLocation();
@@ -30,6 +31,10 @@ const Navbar = () => {
         break;
       case "/unknown":
         document.title = "Unknown || Gadget Heaven";
+        setHome(false);
+        break;
+      case `/viewDetails/${id}`:
+        document.title = "Gadget Heaven";
         setHome(false);
         break;
       case "/":
@@ -60,7 +65,7 @@ const Navbar = () => {
     >
       <div
         className={`navbar  max-w-6xl mx-auto ${
-          isHome ? "bg-[#9538e2] text-white rounded-t-xl" : "bg-white"
+          isHome ? "bg-[#9538e2] text-white rounded-t-xl" : ""
         } `}
       >
         <div className="navbar-start">
@@ -73,29 +78,28 @@ const Navbar = () => {
             >
               {active ? <RxCross2 /> : <RiMenu2Fill />}
             </div>
-            {active ? (
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li>
-                  <NavLink to="/">Home</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/statistics">Statistics</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/dashboard">Dashboard</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/unknown">Unknown</NavLink>
-                </li>
-              </ul>
-            ) : (
-              ""
-            )}
+            <ul
+              className={`absolute bg-base-100 rounded-box z-[1] mt-3 w-40 flex flex-col gap-2 justify-center items-center p-2 shadow-2xl duration-1000 ${
+                active ? "top-6" : "-top-52"
+              }`}
+            >
+              <li className="text-black hover:text-[#9538e2] font-semibold">
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li className="text-black hover:text-[#9538e2] font-semibold">
+                <NavLink to="/statistics">Statistics</NavLink>
+              </li>
+              <li className="text-black hover:text-[#9538e2] font-semibold">
+                <NavLink to="/dashboard">Dashboard</NavLink>
+              </li>
+              <li className="text-black hover:text-[#9538e2] font-semibold">
+                <NavLink to="/unknown">Unknown</NavLink>
+              </li>
+            </ul>
           </div>
-          <a className="md:text-xl font-bold">Gadget Heaven</a>
+          <NavLink to="/" className="md:text-xl font-bold ml-2">
+            Gadget Heaven
+          </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -121,7 +125,7 @@ const Navbar = () => {
               onClick={() => setTrue(!isTrue)}
               className=""
             >
-              <button className="relative p-1.5 md:p-2 bg-gray-200 duration-300 rounded-full hover:text-white text-black hover:bg-[#9538e2]">
+              <button className="relative p-1.5 md:p-2 border hover:border-white bg-gray-200 duration-300 rounded-full hover:text-white text-black hover:bg-[#9538e2]">
                 <GiShoppingCart className="md:text-2xl text-lg" />
               </button>
               {products.length !== 0 ? (
@@ -135,7 +139,7 @@ const Navbar = () => {
             {isTrue ? (
               <div
                 tabIndex={0}
-                className="dropdown-content bg-white shadow-xl p-4 rounded-lg space-y-4 w-40"
+                className="dropdown-content bg-white shadow-xl p-4 rounded-lg space-y-4 w-40 z-30"
               >
                 <h1 className="text-lg text-center font-bold text-black">
                   {products.length} Items in cart
@@ -157,7 +161,7 @@ const Navbar = () => {
           </div>
           <div className="dropdown dropdown-end mr-4">
             <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
-              <button className="relative p-1.5 md:p-2 hover:text-white hover:border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full">
+              <button className="relative p-1.5 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full">
                 <FiHeart className="md:text-2xl text-lg" />
               </button>
               {liked.length === 0 ? (

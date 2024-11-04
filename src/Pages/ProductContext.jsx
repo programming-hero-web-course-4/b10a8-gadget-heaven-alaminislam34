@@ -12,6 +12,10 @@ const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
   const [liked, setLiked] = useState([]);
   const [total, setTotal] = useState(0);
+  const [id, setId] = useState();
+  const handleDetailsId = (id) => {
+    setId(id);
+  };
   const handleLiked = (product) => {
     const available = liked.find((p) => p.product_id == product.product_id);
     if (available) {
@@ -45,7 +49,16 @@ const ProductProvider = ({ children }) => {
   };
   return (
     <ProductContext.Provider
-      value={{ products, handleProduct, handleLiked, liked, total }}
+      value={{
+        products,
+        handleProduct,
+        handleLiked,
+        liked,
+        total,
+        handleDetailsId,
+        id,
+        setProducts,
+      }}
     >
       {children}
     </ProductContext.Provider>
