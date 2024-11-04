@@ -25,7 +25,7 @@ const ViewDetails = () => {
 
   return (
     <div>
-      <div className="grid md:grid-cols-5 gap-4 grid-cols-1 p-4 rounded-lg">
+      <div className="grid md:grid-cols-5 gap-4 grid-cols-1 p-4 rounded-lg my-6 md:my-12">
         <div className="md:col-span-2">
           <img
             className="h-full w-full object-cover"
@@ -37,7 +37,7 @@ const ViewDetails = () => {
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold">
             {product_title}
           </h2>
-          <p>Price: {price} $</p>
+          <p>Price: {price}k</p>
           <p
             className={`py-1 px-3 rounded-full ${
               availability ? "bg-green-200" : "bg-red-200"

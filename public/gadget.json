@@ -4,7 +4,7 @@
     "product_title": "iPhone 13 Pro Max",
     "product_image": "https://i.ibb.co.com/P5DfpCT/i-Phone-13-pro-256-GB-2.jpg",
     "category": "Iphone",
-    "price": 1099,
+    "price": 149,
     "description": "High-end smartphone with advanced camera and powerful performance.",
     "specification": [
       "6.7-inch OLED display",
@@ -20,7 +20,7 @@
     "product_title": "Samsung Galaxy S21 Ultra",
     "product_image": "https://i.ibb.co.com/D7FK6T3/Samsung-Galaxy-S21-Ultra-5-G-Phantom-Silver-500x500.jpg",
     "category": "Phones",
-    "price": 1199,
+    "price": 128,
     "description": "Premium Android phone with stunning camera and display.",
     "specification": [
       "6.8-inch Dynamic AMOLED display",
@@ -36,7 +36,7 @@
     "product_title": "Google Pixel 6 Pro",
     "product_image": "https://i.ibb.co.com/b7HPQph/Google-Pixel-6-Pro.webp",
     "category": "Phones",
-    "price": 899,
+    "price": 99,
     "description": "Flagship Google phone with excellent camera and clean Android experience.",
     "specification": [
       "6.7-inch QHD+ display",
@@ -52,7 +52,7 @@
     "product_title": "OnePlus 9 Pro",
     "product_image": "https://i.ibb.co.com/wwBJvNS/Pine-green-gallery.png",
     "category": "Phones",
-    "price": 969,
+    "price": 69,
     "description": "High-performance phone with fast charging and smooth display.",
     "specification": [
       "6.7-inch Fluid AMOLED display",
@@ -68,7 +68,7 @@
     "product_title": "Sony Xperia 1 III",
     "product_image": "https://i.ibb.co.com/7RXv88T/Sony-Xperia-1-III.jpg",
     "category": "Phones",
-    "price": 1299,
+    "price": 129,
     "description": "Premium phone with excellent camera and 4K display.",
     "specification": [
       "6.5-inch 4K HDR OLED display",
@@ -84,7 +84,7 @@
     "product_title": "Xiaomi Mi 11 Ultra",
     "product_image": "https://i.ibb.co.com/HGFvSh7/pms-1619351700-87548681.png",
     "category": "Phones",
-    "price": 899,
+    "price": 89,
     "description": "High-end phone with powerful specs and great camera performance.",
     "specification": [
       "6.81-inch AMOLED display",
@@ -100,7 +100,7 @@
     "product_title": "Huawei P50 Pro",
     "product_image": "https://i.ibb.co.com/fXj7TRv/4536-91473.jpg",
     "category": "Phones",
-    "price": 1199,
+    "price": 39,
     "description": "Premium smartphone with exceptional camera capabilities.",
     "specification": [
       "6.6-inch OLED display",
@@ -116,7 +116,7 @@
     "product_title": "Oppo Find X3 Pro",
     "product_image": "https://i.ibb.co.com/C62NqRY/Oppo-Find-X3-Pro-Cosmic-Mocha.jpg",
     "category": "Phones",
-    "price": 1149,
+    "price": 49,
     "description": "Stylish smartphone with powerful performance and great display.",
     "specification": [
       "6.7-inch AMOLED display",
@@ -132,7 +132,7 @@
     "product_title": "Asus ROG Phone 5",
     "product_image": "https://i.ibb.co.com/rvXJf1Y/Asus-ROG-Phone-5-500x500.jpg",
     "category": "Phones",
-    "price": 999,
+    "price": 119,
     "description": "Gaming smartphone with high refresh rate and powerful battery.",
     "specification": [
       "6.78-inch AMOLED display",
@@ -148,7 +148,7 @@
     "product_title": "Realme GT Master Edition",
     "product_image": "https://i.ibb.co.com/QQsZFVy/Qj-SQBBOPFj-Zv3-Ox6ak-L68y-CAYicy6-Ejk2x4-Wh-UOa.jpg",
     "category": "Phones",
-    "price": 399,
+    "price": 39,
     "description": "Affordable phone with impressive design and specs.",
     "specification": [
       "6.43-inch AMOLED display",
@@ -164,7 +164,7 @@
     "product_title": "iPhone 12 Mini",
     "product_image": "https://i.ibb.co.com/gzSLyhK/1543-39674.jpg",
     "category": "Iphone",
-    "price": 699,
+    "price": 299,
     "description": "Compact smartphone with powerful features.",
     "specification": [
       "5.4-inch OLED display",
@@ -180,7 +180,7 @@
     "product_title": "Samsung Galaxy Note 20 Ultra",
     "product_image": "https://i.ibb.co.com/wzSPY3b/Samsung-Galaxy-Note-20-Ultra.webp",
     "category": "Phones",
-    "price": 1299,
+    "price": 129,
     "description": "Premium phone with S Pen and excellent camera.",
     "specification": [
       "6.9-inch AMOLED display",
@@ -196,7 +196,7 @@
     "product_title": "Nokia XR20",
     "product_image": "https://i.ibb.co.com/Dg62BqT/Nokia-XR20.jpg",
     "category": "Phones",
-    "price": 549,
+    "price": 49,
     "description": "Durable smartphone built to withstand extreme conditions.",
     "specification": [
       "6.67-inch display",
@@ -212,7 +212,7 @@
     "product_title": "Motorola Edge 20 Pro",
     "product_image": "https://i.ibb.co.com/9yCZVb9/Motorola-Edge-20-Pro.webp",
     "category": "Phones",
-    "price": 699,
+    "price": 69,
     "description": "High-performance phone with excellent display and camera.",
     "specification": [
       "6.7-inch OLED display",
@@ -228,7 +228,7 @@
     "product_title": "Xiaomi Redmi Note 10 Pro",
     "product_image": "https://i.ibb.co.com/rGzNvkG/Xiaomi-Redmi-Note-10-Pro.webp",
     "category": "Phones",
-    "price": 299,
+    "price": 27,
     "description": "Affordable smartphone with impressive specs.",
     "specification": [
       "6.67-inch AMOLED display",
@@ -244,7 +244,7 @@
     "product_title": "Vivo X60 Pro",
     "product_image": "https://i.ibb.co.com/8gB0W8W/81-DJg-F3-G9i-L.jpg",
     "category": "Phones",
-    "price": 799,
+    "price": 56,
     "description": "Flagship phone with advanced camera technology.",
     "specification": [
       "6.56-inch AMOLED display",
@@ -260,7 +260,7 @@
     "product_title": "Sony Xperia 5 II",
     "product_image": "https://i.postimg.cc/fLyMP33C/Sony-Xperia-5-II.avif",
     "category": "Phones",
-    "price": 949,
+    "price": 79,
     "description": "Compact premium phone with 4K video capabilities.",
     "specification": [
       "6.1-inch OLED display",
@@ -276,7 +276,7 @@
     "product_title": "LG Wing 5G",
     "product_image": "https://i.postimg.cc/zvR8J9FR/images.jpg",
     "category": "Phones",
-    "price": 999,
+    "price": 99,
     "description": "Unique dual-screen phone with swivel design.",
     "specification": [
       "6.8-inch P-OLED display",
@@ -292,7 +292,7 @@
     "product_title": "Huawei Mate 40 Pro",
     "product_image": "https://i.postimg.cc/YjKkjbdD/Huawei-Mate-40-Pro-Mystic-Silver.jpg",
     "category": "Phones",
-    "price": 1099,
+    "price": 39,
     "description": "High-end phone with cutting-edge camera features.",
     "specification": [
       "6.76-inch OLED display",
@@ -308,7 +308,7 @@
     "product_title": "Realme Narzo 30",
     "product_image": "https://i.postimg.cc/L4q1Y5yj/images-1.jpg",
     "category": "Phones",
-    "price": 179,
+    "price": 19,
     "description": "Budget-friendly phone with good performance and battery life.",
     "specification": [
       "6.5-inch IPS LCD display",
@@ -324,7 +324,7 @@
     "product_title": "iPad Pro 12.9",
     "product_image": "https://i.postimg.cc/MZhjyw4N/i-Pad-Pro-12-9.webp",
     "category": "MacBook",
-    "price": 1099,
+    "price": 199,
     "description": "High-end tablet with powerful performance and large display.",
     "specification": [
       "12.9-inch Liquid Retina display",
@@ -340,7 +340,7 @@
     "product_title": "Samsung Galaxy Tab S7+",
     "product_image": "https://i.postimg.cc/Cx0BQNw4/ap6t2pi9l2tkdlpcigrr.jpg",
     "category": "Tablets",
-    "price": 849,
+    "price": 99,
     "description": "Premium Android tablet with stunning display and S Pen support.",
     "specification": [
       "12.4-inch Super AMOLED display",
@@ -356,7 +356,7 @@
     "product_title": "Microsoft Surface Pro 8",
     "product_image": "https://i.postimg.cc/rFXKDJRL/Microsoft-Surface-Pro-8-price-in-Bangladesh.webp",
     "category": "Tablets",
-    "price": 899,
+    "price": 89,
     "description": "Versatile 2-in-1 tablet with powerful specs for productivity.",
     "specification": [
       "13-inch PixelSense display",
@@ -372,7 +372,7 @@
     "product_title": "Lenovo Tab P11 Pro",
     "product_image": "https://i.postimg.cc/tC37WxFn/naoxow661wkwkc0f7epju78ht8s4bx650340.avif",
     "category": "Tablets",
-    "price": 499,
+    "price": 49,
     "description": "Affordable Android tablet with high-resolution display.",
     "specification": [
       "11.5-inch OLED display",
@@ -404,7 +404,7 @@
     "product_title": "MacBook Pro 16",
     "product_image": "https://i.postimg.cc/LXg8XYHX/3713-36363.jpg",
     "category": "MacBook",
-    "price": 2499,
+    "price": 249,
     "description": "High-performance laptop with large display and advanced graphics.",
     "specification": [
       "16-inch Retina display",
@@ -420,7 +420,7 @@
     "product_title": "Dell XPS 13",
     "product_image": "https://i.postimg.cc/VsMNPCGZ/Dell-XPS-13-Plus-BD-Price-1.webp",
     "category": "Laptops",
-    "price": 1299,
+    "price": 129,
     "description": "Ultra-slim laptop with excellent display and performance.",
     "specification": [
       "13.4-inch FHD display",
@@ -436,7 +436,7 @@
     "product_title": "HP Spectre x360",
     "product_image": "https://i.postimg.cc/T322bHRB/HP-SPECTRE.jpg",
     "category": "Laptops",
-    "price": 1399,
+    "price": 120,
     "description": "Convertible laptop with great design and battery life.",
     "specification": [
       "13.3-inch 4K OLED display",
@@ -452,7 +452,7 @@
     "product_title": "Asus ROG Zephyrus G14",
     "product_image": "https://i.postimg.cc/6Qy9j240/Asus-ROG-Zephyrus-1-5.webp",
     "category": "Laptops",
-    "price": 1599,
+    "price": 159,
     "description": "Gaming laptop with powerful specs and compact design.",
     "specification": [
       "14-inch FHD display",
@@ -469,7 +469,7 @@
     "product_title": "Lenovo ThinkPad X1 Carbon",
     "product_image": "https://i.postimg.cc/7hywZKss/5216835-1613282442.webp",
     "category": "Laptops",
-    "price": 1499,
+    "price": 149,
     "description": "Business laptop with excellent build quality and performance.",
     "specification": [
       "14-inch FHD display",
@@ -485,7 +485,7 @@
     "product_title": "Microsoft Surface Laptop 4",
     "product_image": "https://i.postimg.cc/d3mvkGgq/Microsoft-Surface-Laptop-4.webp",
     "category": "Laptops",
-    "price": 999,
+    "price": 80,
     "description": "Stylish and portable laptop with a clean design.",
     "specification": [
       "13.5-inch PixelSense display",
@@ -501,7 +501,7 @@
     "product_title": "AirPods Pro",
     "product_image": "https://i.postimg.cc/FFjhBQz2/airpods-pro-2-usb-c-blue-background.webp",
     "category": "Accessories",
-    "price": 249,
+    "price": 4,
     "description": "High-quality wireless earbuds with noise cancellation.",
     "specification": [
       "Active noise cancellation",
@@ -516,7 +516,7 @@
     "product_title": "Samsung Galaxy Buds Pro",
     "product_image": "https://i.postimg.cc/TYfT8HWh/samsung-galaxy-buds-pro-true-wireless-earbuds-silver-1.jpg",
     "category": "Accessories",
-    "price": 199,
+    "price": 5,
     "description": "Premium earbuds with excellent sound and ANC.",
     "specification": [
       "Active noise cancellation",
@@ -531,7 +531,7 @@
     "product_title": "Sony WF-1000XM4",
     "product_image": "https://i.postimg.cc/bwv8rDgh/g1a-Aq-DLLx-Un-X55a-V7j-K8nel-WKb-SKQUAu-Ffu8m-P43.jpg",
     "category": "Accessories",
-    "price": 279,
+    "price": 2,
     "description": "Industry-leading noise cancellation and sound quality.",
     "specification": ["ANC", "High-res audio", "8 hours battery life"],
     "availability": true,
@@ -542,7 +542,7 @@
     "product_title": "Jabra Elite 85t",
     "product_image": "https://i.postimg.cc/XYDWCj1y/718r-Eg-IZEDL.jpg",
     "category": "Accessories",
-    "price": 229,
+    "price": 2,
     "description": "Comfortable and durable earbuds with customizable ANC.",
     "specification": ["ANC", "Wireless charging", "Adjustable ANC levels"],
     "availability": false,
@@ -553,7 +553,7 @@
     "product_title": "Bose QuietComfort Earbuds",
     "product_image": "https://i.postimg.cc/N09c83ZC/61-Oj-FJ2p1n-L-AC-SL1500-1708x1708.jpg",
     "category": "Accessories",
-    "price": 279,
+    "price": 27,
     "description": "Premium earbuds with powerful noise cancellation.",
     "specification": [
       "ANC",
@@ -568,7 +568,7 @@
     "product_title": "iPad Air",
     "product_image": "https://i.postimg.cc/rpBLfhkV/apple-ipad-air-m2-chip-8gb-ram-256gb-rom-wifi-11717068379.webp",
     "category": "MacBook",
-    "price": 599,
+    "price": 59,
     "description": "Lightweight tablet with powerful performance and vibrant display.",
     "specification": [
       "10.9-inch Liquid Retina display",
@@ -584,7 +584,7 @@
     "product_title": "Huawei MatePad Pro",
     "product_image": "https://i.postimg.cc/hvgRBfvN/huawei-matepad-pro-13-2-kv.jpg",
     "category": "Tablets",
-    "price": 799,
+    "price": 79,
     "description": "High-performance tablet with a sleek design and powerful features.",
     "specification": [
       "10.8-inch LCD display",
@@ -600,7 +600,7 @@
     "product_title": "Google Pixel Slate",
     "product_image": "https://i.postimg.cc/KjNSvxgj/pixelslate11.jpg",
     "category": "Tablets",
-    "price": 799,
+    "price": 79,
     "description": "Chromebook tablet with powerful specs for productivity.",
     "specification": [
       "12.3-inch Molecular Display",
@@ -616,7 +616,7 @@
     "product_title": "Asus Chromebook Flip",
     "product_image": "https://i.postimg.cc/TYdvNLZD/download.png",
     "category": "Laptops",
-    "price": 549,
+    "price": 54,
     "description": "Versatile 2-in-1 Chromebook with flexible design.",
     "specification": [
       "14-inch FHD display",

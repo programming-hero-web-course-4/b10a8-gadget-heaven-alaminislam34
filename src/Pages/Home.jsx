@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink, useLoaderData } from "react-router-dom";
+import Banner from "./Banner";
 
 const Home = () => {
   const product = useLoaderData();
@@ -25,7 +26,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <h1>{products.length}</h1>
+      <Banner />
       <section className="grid lg:grid-cols-5 md:grid-cols-7 grid-cols-1 gap-6 justify-center ">
         <aside className=" md:col-span-2 lg:col-span-1">
           <ul className="grid grid-cols-2 md:grid-cols-1 items-center justify-center gap-2 md:gap-4 p-4 rounded-lg bg-base-200">

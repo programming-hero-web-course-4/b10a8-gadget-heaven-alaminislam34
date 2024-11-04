@@ -5,9 +5,9 @@ import Navbar from "../Navbar/Navbar";
 const MainLayout = () => {
   return (
     <div>
+      <Navbar />
       <section className="max-w-6xl mx-auto">
-        <Navbar />
-        <section className="w-11/12 mx-auto">
+        <section className="">
           <Outlet />
         </section>
       </section>
