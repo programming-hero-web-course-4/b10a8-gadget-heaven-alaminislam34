@@ -1,14 +1,20 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { RiMenu2Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import { FiHeart } from "react-icons/fi";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { ProductContext } from "../Pages/ProductContext";
 
 const Navbar = () => {
+  const { products, liked } = useContext(ProductContext);
   const [active, setActive] = useState(false);
   const [isTrue, setTrue] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const handleDashboard = () => {
+    navigate("/dashboard");
+  };
   useEffect(() => {
     switch (location.pathname) {
       case "/statistics":
@@ -24,6 +30,7 @@ const Navbar = () => {
         document.title = "Gadget Heaven";
     }
   }, [location.pathname]);
+
   return (
     <div className="h-[180px]">
       <div className="fixed z-50 top-0 left-0 bg-white/20 backdrop-blur-2xl w-full">
@@ -85,15 +92,27 @@ const Navbar = () => {
                   <GiShoppingCart className="md:text-2xl text-lg" />
                 </button>
                 <span className="h-5 w-5 rounded-full bg-gray-100 flex justify-center items-center absolute -top-2 -right-2">
-                  0
+                  {products.length > 0 ? products.length : 0}
                 </span>
               </div>
               {isTrue ? (
                 <div
                   tabIndex={0}
-                  className="dropdown-content bg-green-200 p-2 rounded-lg"
+                  className="dropdown-content bg-white shadow-xl p-4 rounded-lg space-y-4"
                 >
-                  <h1 className="text-lg text-center">buy card</h1>
+                  <h1 className="text-lg text-center">
+                    {products.length} Items in cart
+                  </h1>
+                  <div className="divider"></div>
+                  <p className="font-semibold text-[#9538E2]">
+                    Subtotal: {products.price}
+                  </p>
+                  <button
+                    onClick={handleDashboard}
+                    className="py-1 md:py-2 px-2 md:px-4 rounded-full bg-[#9538E2] text-white font-semibold"
+                  >
+                    Dashboard
+                  </button>
                 </div>
               ) : (
                 ""
@@ -105,7 +124,7 @@ const Navbar = () => {
                   <FiHeart className="md:text-2xl text-lg" />
                 </button>
                 <span className="h-5 w-5 rounded-full bg-gray-100 flex justify-center items-center absolute -top-2 -right-2">
-                  0
+                  {liked ? liked.length : 0}
                 </span>
               </div>
               {isTrue ? (
@@ -113,7 +132,9 @@ const Navbar = () => {
                   tabIndex={0}
                   className="dropdown-content bg-green-200 p-2 rounded-lg"
                 >
-                  <h1 className="text-lg text-center">love item</h1>
+                  <h1 className="text-lg text-center">
+                    {liked.length} items in like
+                  </h1>
                 </div>
               ) : (
                 ""

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const product = useLoaderData();
@@ -51,7 +51,12 @@ const Home = () => {
                   <h2 className="card-title">{p.product_title}</h2>
                   <p>Price: {p.price} $</p>
                   <div className="card-actions justify-start">
-                    <button className="btn btn-primary">View Details</button>
+                    <NavLink
+                      to={`/viewDetails/${p.product_id}`}
+                      className="btn btn-primary"
+                    >
+                      View Details
+                    </NavLink>
                   </div>
                 </div>
               </div>
