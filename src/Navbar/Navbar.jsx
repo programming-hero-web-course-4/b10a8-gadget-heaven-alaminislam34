@@ -193,13 +193,13 @@ const Navbar = () => {
                 tabIndex={0}
                 className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-40"
               >
-                <h1 className="text-lg text-center font-bold text-black">
+                <h1 className="text-base md:text-lg text-left font-bold text-black">
                   {liked.length} Items in WishList
                 </h1>
                 <div className="divider"></div>
                 <button
                   onClick={handleWishlist}
-                  className="py-1 md:py-2 px-2 md:px-4 rounded-full bg-[#9538E2] text-white font-semibold"
+                  className="py-1 md:py-2 px-3 md:px-6 rounded-full bg-[#9538E2] text-white font-semibold"
                 >
                   WishList
                 </button>

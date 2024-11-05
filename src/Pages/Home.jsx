@@ -39,12 +39,12 @@ const Home = () => {
       </h1>
       <section className="grid lg:grid-cols-5 md:grid-cols-7 grid-cols-1 gap-6 justify-center">
         <aside className=" md:col-span-2 lg:col-span-1">
-          <ul className="grid grid-cols-2 md:grid-cols-1 items-center justify-center gap-2 md:gap-4 p-4 rounded-lg bg-base-200 shadow-2xl">
+          <ul className="grid grid-cols-2 md:grid-cols-1 items-center justify-center gap-2 md:gap-4 p-4 rounded-lg bg-white shadow-2xl">
             {category.map((cate) => (
               <li
                 onClick={() => handleDisplayCategoryProducts(cate.category)}
                 key={cate.id}
-                className="py-1 px-2.5 md:px-4 hover:bg-[#9538E2] rounded-full text-[#9538E2] hover:text-white font-semibold text-center border border-[#9538E2] w-full h-full cursor-pointer"
+                className="py-1 px-2.5 md:px-4 hover:bg-[#9538E2] rounded-full text-[#9538E2] hover:text-white font-semibold text-center border border-[#9538E2] w-full h-full cursor-pointer hover:shadow-2xl"
               >
                 {cate.category}
               </li>

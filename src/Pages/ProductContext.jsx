@@ -38,14 +38,24 @@ const ProductProvider = ({ children }) => {
     return;
   };
   const handleProduct = (product) => {
-    setProducts((prevProducts) => [...prevProducts, product]);
-    setTotal((p) => p + product.price);
-    toast(
-      <p className="font-semibold flex items-center gap-2">
-        <FaCheckCircle className="text-[#9538E2]" />
-        Add to Cart
-      </p>
-    );
+    const available = products.find((p) => p.product_id === product.product_id);
+    if (available) {
+      toast(
+        <div className="flex justify-start gap-2 items-center font-semibold">
+          <ImCross className="text-red-500" />
+          Already added..
+        </div>
+      );
+    } else {
+      setProducts((prevProducts) => [...prevProducts, product]);
+      setTotal((p) => p + product.price);
+      toast(
+        <p className="font-semibold flex items-center gap-2">
+          <FaCheckCircle className="text-[#9538E2]" />
+          Add to Cart
+        </p>
+      );
+    }
   };
   return (
     <ProductContext.Provider

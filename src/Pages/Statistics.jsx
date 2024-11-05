@@ -26,12 +26,12 @@ const Statistics = () => {
         <h2 className="text-lg md:text-xl lg:text-2xl font-bold my-3 md:my-4 lg:my-6">
           Statistics
         </h2>
-        <div className="border h-[60vh]">
+        <div className="md:h-[60vh] h-[40vh]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart width={150} height={40} data={product} barSize={29}>
               <Bar dataKey="price" fill="#8884d8" />
-              <XAxis dataKey="product_title" />
-              <YAxis />
+              <XAxis className="text-xs" dataKey="product_title" />
+              <YAxis className="text-xs " />
               <Legend />
               <Tooltip />
             </BarChart>
