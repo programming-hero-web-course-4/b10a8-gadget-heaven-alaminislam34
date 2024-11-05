@@ -58,7 +58,7 @@ const Cart = () => {
             </button>
             <button
               onClick={handlePurchase}
-              className="py-1.5 px-4 ml-2 font-semibold rounded-full border text-white border-[#9538e2] bg-gradient-to-tr from-yellow-500 via-[#9538e2] to-[#9538e2]"
+              className="py-1.5 px-4 ml-2 font-semibold rounded-full border text-white border-[#9538e2] bg-gradient-to-tr from-yellow-500 via-[#9538e2] to-[#9538e2] hover:bg-gradient-to-bl hover:from-yellow-500 hover:via-[#9538e2] hover:to-[#9538e2]"
             >
               Purchase
             </button>

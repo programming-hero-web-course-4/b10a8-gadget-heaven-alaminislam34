@@ -7,6 +7,7 @@ import { FiHeart } from "react-icons/fi";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ProductContext } from "../Pages/ProductContext";
 import "./Navbar.css";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 const Navbar = () => {
   const { products, liked, total, id } = useContext(ProductContext);
@@ -17,6 +18,9 @@ const Navbar = () => {
   const [isHome, setHome] = useState(false);
 
   const navigate = useNavigate();
+  const handleUsers = () => {
+    navigate("/users");
+  };
   const handleDashboard = () => {
     navigate("/dashboard/cart");
   };
@@ -128,9 +132,6 @@ const Navbar = () => {
             <li className={`font-semibold `}>
               <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
-            <li className={`font-semibold `}>
-              <NavLink to="/unknown">Unknown</NavLink>
-            </li>
           </ul>
         </div>
         <div className="navbar-end flex flex-row gap-2 md:gap-4">
@@ -175,7 +176,7 @@ const Navbar = () => {
               ""
             )}
           </div>
-          <div className="dropdown dropdown-end mr-4">
+          <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
               <button className="relative p-1.5 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full">
                 <FiHeart className="md:text-2xl text-lg" />
@@ -206,6 +207,21 @@ const Navbar = () => {
               </div>
             ) : (
               ""
+            )}
+          </div>
+          <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
+            <button
+              onClick={handleUsers}
+              className="relative p-1.5 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full"
+            >
+              <FaRegCircleUser className="md:text-2xl text-lg" />
+            </button>
+            {liked.length === 0 ? (
+              ""
+            ) : (
+              <span className="h-5 w-5 rounded-full bg-[#9538e2] text-white font-bold flex justify-center items-center absolute -top-2 -right-2">
+                {liked ? liked.length : 0}
+              </span>
             )}
           </div>
         </div>
