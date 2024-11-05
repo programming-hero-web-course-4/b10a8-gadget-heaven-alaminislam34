@@ -43,7 +43,9 @@ const Cart = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between items-center ">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Cart</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-4 md:my-6">
+          Cart
+        </h2>
         <div className="flex flex-col md:flex-row gap-2 items-center">
           <h4 className="text-base md:text-lg font-bold">
             Total Cost: {total} BDT
@@ -87,17 +89,17 @@ const Cart = () => {
         {products.map((product, index) => (
           <div
             key={index}
-            className="grid md:grid-cols-5 grid-cols-3 items-center gap-4 p-2 md:p-4 rounded-xl bg-white shadow-2xl relative"
+            className="grid md:grid-cols-5 grid-cols-3 items-center gap-4 p-2 md:p-4 py-4 md:py-6 rounded-xl bg-white shadow-2xl relative"
           >
             <img src={product.product_image} alt="" />
-            <div className="md:col-span-4 col-span-2 md:space-y-4">
-              <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
+            <div className="md:col-span-4 col-span-2 space-y-2 md:space-y-4">
+              <h2 className="text-base md:text-lg lg:text-xl font-semibold">
                 {product.product_title}
               </h2>
-              <p className="text-black/70 text-sm md:text-base">
+              <p className="text-black/70 text-xs md:text-sm lg:text-base">
                 {product.description}
               </p>
-              <p className="text-sm md:text-base font-medium">
+              <p className="text-xs md:text-sm lg:text-base font-medium">
                 Price: $ {product.price}
               </p>
             </div>
@@ -105,7 +107,7 @@ const Cart = () => {
               onClick={() =>
                 handleRemoveCartItem(product.product_id, product.price)
               }
-              className="absolute top-0 right-0 md:text-4xl text-3xl text-red-600"
+              className="absolute top-0 right-0 md:text-4xl text-2xl text-red-600"
             >
               <RxCrossCircled />
             </button>

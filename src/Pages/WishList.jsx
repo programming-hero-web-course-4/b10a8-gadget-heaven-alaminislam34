@@ -12,21 +12,22 @@ const WishList = () => {
   };
   return (
     <div>
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-4 md:my-8 lg:my-12">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-4 md:my-6">
         Wishlist
       </h2>
+      <div className="divider"></div>
       <div className=" flex flex-col gap-4 my-4 md:my-6">
         {liked.map((product, index) => (
           <div
             key={index}
-            className="grid md:grid-cols-5 grid-cols-3 items-center gap-4 p-2 md:p-4 rounded-xl bg-white shadow-2xl relative"
+            className="grid md:grid-cols-5 grid-cols-3 items-center gap-4 p-4 py-6 rounded-xl bg-white shadow-2xl relative"
           >
             <img src={product.product_image} alt="" />
-            <div className="md:col-span-4 col-span-2 md:space-y-4">
-              <h2 className="text-lg md:text-xl lg:text-2xl font-semibold">
+            <div className="md:col-span-4 col-span-2 space-y-2 md:space-y-4">
+              <h2 className="text-base md:text-lg lg:text-xl font-semibold">
                 {product.product_title}
               </h2>
-              <p className="text-black/70 text-sm md:text-base">
+              <p className="text-black/70 text-xs md:text-sm lg:text-base">
                 {product.description}
               </p>
               <p className="text-sm md:text-base font-medium">
@@ -37,7 +38,7 @@ const WishList = () => {
                   handleProduct(product),
                     handleRemoveCartItem(product.product_id);
                 }}
-                className="py-1 px-3 rounded-full border border-[#9538E2] hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white"
+                className="py-1.5 md:py-2 px-4 md:px-6 rounded-full border border-[#9538E2] hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white text-xs md:text-sm lg:text-base"
               >
                 Add to Card
               </button>

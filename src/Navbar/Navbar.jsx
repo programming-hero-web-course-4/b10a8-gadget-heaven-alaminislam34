@@ -75,12 +75,12 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`mt-6 left-0 top-0 mx-auto duration-500  w-full ${
+      className={`mt-6 left-0 top-0 mx-auto duration-500 w-full ${
         isSticky ? "sticky bg-white/30 z-50 backdrop-blur-2xl" : ""
       }`}
     >
       <div
-        className={`navbar  max-w-6xl mx-auto ${
+        className={`navbar  max-w-6xl mx-auto p-3 ${
           isHome ? "bg-[#9538e2] text-white " : ""
         } ${isSticky ? "rounded-none" : "rounded-t-xl"} `}
       >
@@ -95,25 +95,22 @@ const Navbar = () => {
               {active ? <RxCross2 /> : <RiMenu2Fill />}
             </div>
             <ul
-              className={`absolute bg-base-100 rounded-box z-[1] mt-3 w-40 flex flex-col gap-2 justify-center items-center p-2 shadow-2xl duration-1000 ${
+              className={`absolute bg-base-300 rounded-xl z-[1] mt-3 w-32 flex flex-col gap-2 justify-center items-center p-4 drop-shadow-2xl duration-1000 ${
                 active ? "top-6" : "-top-52"
               }`}
             >
-              <li className="text-black hover:text-[#9538e2] font-semibold">
+              <li className="text-black hover:text-[#9538e2] text-sm md:text-base lg:text-lg font-medium">
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li className="text-black hover:text-[#9538e2] font-semibold">
+              <li className="text-black hover:text-[#9538e2] text-sm md:text-base lg:text-lg font-medium">
                 <NavLink to="/statistics">Statistics</NavLink>
               </li>
-              <li className="text-black hover:text-[#9538e2] font-semibold">
+              <li className="text-black hover:text-[#9538e2] text-sm md:text-base lg:text-lg font-medium">
                 <NavLink to="/dashboard">Dashboard</NavLink>
-              </li>
-              <li className="text-black hover:text-[#9538e2] font-semibold">
-                <NavLink to="/unknown">Unknown</NavLink>
               </li>
             </ul>
           </div>
-          <NavLink to="/" className="md:text-xl font-bold ml-2">
+          <NavLink to="/" className="md:text-xl font-bold ">
             Gadget Heaven
           </NavLink>
         </div>
@@ -142,7 +139,7 @@ const Navbar = () => {
               onClick={() => setTrue(!isTrue)}
               className=""
             >
-              <button className="relative p-1.5 md:p-2 border hover:border-white bg-gray-200 duration-300 rounded-full hover:text-white text-black hover:bg-[#9538e2]">
+              <button className="relative p-1 md:p-2 border hover:border-white bg-gray-200 duration-300 rounded-full hover:text-white text-black hover:bg-[#9538e2]">
                 <GiShoppingCart className="md:text-2xl text-lg" />
               </button>
               {products.length !== 0 ? (
@@ -158,19 +155,21 @@ const Navbar = () => {
                 tabIndex={0}
                 className="dropdown-content bg-white shadow-xl p-4 rounded-lg space-y-4 w-40 z-30"
               >
-                <h1 className="text-lg text-center font-bold text-black">
+                <h1 className=" text-sm md:text-base lg:text-lg text-center font-bold text-black">
                   {products.length} Items in cart
                 </h1>
-                <div className="divider"></div>
-                <p className="font-semibold text-[#9538E2]">
+                <div className="border-b w-full my-3"></div>
+                <p className="font-semibold text-xs md:text-sm lg:text-base text-center text-[#9538E2]">
                   Subtotal: {total} BDT
                 </p>
-                <button
-                  onClick={handleDashboard}
-                  className="py-1 md:py-2 px-2 md:px-4 rounded-full bg-[#9538E2] text-white font-semibold"
-                >
-                  Dashboard
-                </button>
+                <div className="flex justify-center items-center">
+                  <button
+                    onClick={handleDashboard}
+                    className="py-1.5 md:py-2 px-4 md:px-6 text-xs md:text-sm lg:text-base rounded-full bg-[#9538E2] text-white font-semibold"
+                  >
+                    Dashboard
+                  </button>
+                </div>
               </div>
             ) : (
               ""
@@ -178,7 +177,7 @@ const Navbar = () => {
           </div>
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
-              <button className="relative p-1.5 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full">
+              <button className="relative p-1 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full flex justify-center items-center">
                 <FiHeart className="md:text-2xl text-lg" />
               </button>
               {liked.length === 0 ? (
@@ -194,16 +193,18 @@ const Navbar = () => {
                 tabIndex={0}
                 className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-40 z-30"
               >
-                <h1 className="text-base md:text-lg text-left font-bold text-black">
+                <h2 className="text-sm md:text-base lg:text-lg text-center font-bold text-black">
                   {liked.length} Items in WishList
-                </h1>
-                <div className="divider"></div>
-                <button
-                  onClick={handleWishlist}
-                  className="py-1 md:py-2 px-3 md:px-6 rounded-full bg-[#9538E2] text-white font-semibold"
-                >
-                  WishList
-                </button>
+                </h2>
+                <div className="border-b w-full my-3"></div>
+                <div className="flex justify-center items-center">
+                  <button
+                    onClick={handleWishlist}
+                    className="py-1.5 md:py-2 px-4 md:px-6 text-xs md:text-sm lg:text-base rounded-full bg-[#9538E2] text-white font-semibold"
+                  >
+                    WishList
+                  </button>
+                </div>
               </div>
             ) : (
               ""
@@ -212,17 +213,10 @@ const Navbar = () => {
           <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
             <button
               onClick={handleUsers}
-              className="relative p-1.5 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full"
+              className="relative p-1 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full"
             >
               <FaRegCircleUser className="md:text-2xl text-lg" />
             </button>
-            {liked.length === 0 ? (
-              ""
-            ) : (
-              <span className="h-5 w-5 rounded-full bg-[#9538e2] text-white font-bold flex justify-center items-center absolute -top-2 -right-2">
-                {liked ? liked.length : 0}
-              </span>
-            )}
           </div>
         </div>
       </div>

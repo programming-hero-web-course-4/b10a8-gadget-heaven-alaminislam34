@@ -15,10 +15,10 @@ const Dashboard = () => {
   return (
     <div>
       <div className="bg-[#9538e2] my-4 py-4 md:py-6 text-center pt-6 px-4 space-y-3 w-full">
-        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white">
+        <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white px-1">
           Dashboard
         </h1>
-        <p className="text-white md:w-8/12 mx-auto text-sm lg:text-base">
+        <p className="text-white/70 text-sm md:text-base md:w-8/12 mx-auto px-2">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
@@ -49,22 +49,6 @@ const Dashboard = () => {
             WishList
           </a>
         </div>
-        {/* <div role="tab" className=" tab tabs-boxed">
-          <button
-            role="tab"
-            onClick={handleCart}
-            className={`md:py-2 py-1 text-sm md:text-base md:px-6 px-4 duration-300 rounded-full border border-white text-white  font-semibold`}
-          >
-            Cart
-          </button>
-          <button
-            role="tab"
-            onClick={handleWishlist}
-            className={`md:py-2 py-1 text-sm md:text-base md:px-6 px-4 duration-300 rounded-full border border-white text-white  font-semibold`}
-          >
-            Wishlist
-          </button>
-        </div> */}
       </div>
       <section className="w-11/12 mx-auto">
         <Outlet />

@@ -34,24 +34,24 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center my-4">
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center my-4 md:my-6 lg:my-8 px-2">
         Explore Cutting-Edge Gadgets
       </h1>
       <section className="grid lg:grid-cols-5 md:grid-cols-7 grid-cols-1 gap-6 justify-center">
         <aside className=" md:col-span-2 lg:col-span-1">
-          <ul className="grid grid-cols-2 md:grid-cols-1 items-center justify-center gap-2 md:gap-4 p-4 rounded-lg bg-white shadow-2xl">
+          <ul className="grid grid-cols-2 md:grid-cols-1 items-center justify-center gap-3 p-4 rounded-lg bg-white shadow-2xl">
             {category.map((cate) => (
               <li
                 onClick={() => handleDisplayCategoryProducts(cate.category)}
                 key={cate.id}
-                className="py-1 px-2.5 md:px-4 hover:bg-[#9538E2] rounded-full text-[#9538E2] hover:text-white font-semibold text-center border border-[#9538E2] w-full h-full cursor-pointer hover:shadow-2xl"
+                className="py-1.5 text-sm md:text-base hover:bg-[#9538E2] rounded-full text-[#9538E2] hover:text-white font-semibold text-center border border-[#9538E2] w-full h-full cursor-pointer hover:shadow-2xl"
               >
                 {cate.category}
               </li>
             ))}
           </ul>
         </aside>
-        <div className=" md:col-span-5 lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 rounded-lg bg-base-200 shadow-inner">
+        <div className=" md:col-span-5 lg:col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 rounded-lg ">
           {products.length > 0 ? (
             products.map((p, index) => (
               <div
