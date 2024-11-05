@@ -3,6 +3,8 @@ import { FiHeart } from "react-icons/fi";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ProductContext } from "./ProductContext";
 import { ToastContainer } from "react-toastify";
+import Rating from "react-rating";
+import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 
 const ViewDetails = () => {
   const { handleProduct, handleLiked } = useContext(ProductContext);
@@ -20,8 +22,6 @@ const ViewDetails = () => {
     availability,
     rating,
   } = viewGadget;
-  const Star = Math.floor(rating);
-  const emptyStar = 5 - Star;
 
   return (
     <div>
@@ -60,12 +60,16 @@ const ViewDetails = () => {
                 </li>
               ))}
             </ol>
-            <p className="font-medium">
-              Rating {rating} <span className="text-yellow-500">★</span>
+            <p className="font-medium flex flex-row gap-1 items-center">
+              Rating {rating}
+              <IoIosStar className="text-yellow-500" />
             </p>
-            <p className="text-yellow-500">
-              {"★".repeat(Math.floor(rating))}
-              {"★".repeat(Math.floor(emptyStar))}
+            <p className="text-yellow-500 text-2xl">
+              <Rating
+                emptySymbol={<IoIosStarOutline />}
+                fullSymbol={<IoIosStar />}
+                fractions={2}
+              />
             </p>
             <div className="flex flex-row gap-2 justify-start items-center">
               <button

@@ -5,22 +5,34 @@ import { toast, ToastContainer } from "react-toastify";
 import { ImCross } from "react-icons/im";
 import { FaSortAmountDown } from "react-icons/fa";
 import success from "../assets/Group.png";
+import { PiEmptyBold } from "react-icons/pi";
 
 const Cart = () => {
   const { products, setProducts, total, setTotal } = useContext(ProductContext);
-  const handleRemoveCartItem = (id) => {
+  const handleRemoveCartItem = (id, price) => {
+    const remainingTotal = total - price;
+    setTotal(remainingTotal);
     const remainingProducts = products.filter((p) => p.product_id !== id);
     setProducts(remainingProducts);
     toast(
       <div className="flex gap-2 items-center">
         <ImCross className="text-red-500" />
-        <p>Removed item</p>
+        <p>Item Removed</p>
       </div>
     );
   };
   const handlePurchase = () => {
-    document.getElementById("my_modal_5").showModal();
-    setProducts([]);
+    if (products.length === 0) {
+      toast(
+        <div className="flex gap-2">
+          <PiEmptyBold className="text-2xl font-bold text-red-500" />
+          <p className="font-bold">Your cart is empty.</p>
+        </div>
+      );
+    } else {
+      document.getElementById("my_modal_5").showModal();
+      setProducts([]);
+    }
   };
   const handleSortByPrice = () => {
     const sortPrice = [...products].sort(
@@ -90,7 +102,9 @@ const Cart = () => {
               </p>
             </div>
             <button
-              onClick={() => handleRemoveCartItem(product.product_id)}
+              onClick={() =>
+                handleRemoveCartItem(product.product_id, product.price)
+              }
               className="absolute top-0 right-0 md:text-4xl text-3xl text-red-600"
             >
               <RxCrossCircled />
