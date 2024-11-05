@@ -8,26 +8,26 @@ const Login = () => {
           Log in
         </h1>
         <input
-          className="py-1.5 md:py-2 pl-4 rounded-md text-[#9538e2]"
+          className="py-1.5 md:py-2 pl-4 rounded-md text-[#9538e2] text-sm md:text-base"
           type="text"
           name="name"
           placeholder="Your email"
         />
         <input
-          className="py-1.5 md:py-2 pl-4 rounded-md text-[#9538e2]"
+          className="py-1.5 md:py-2 pl-4 rounded-md text-[#9538e2] text-sm md:text-base"
           type="text"
           name="name"
           placeholder="Your password"
         />
-        <a className="underline text-end font-medium  cursor-pointer">
+        <a className="underline text-end font-medium  cursor-pointer text-sm md:text-base">
           Forget Password
         </a>
         <input
-          className="py-1.5 md:py-2 pl-4 rounded-md text-center text-[#9538e2] bg-white hover:bg-base-300 font-bold cursor-pointer"
+          className="py-1.5 md:py-2 pl-4 rounded-md text-center text-sm md:text-base text-[#9538e2] bg-white hover:bg-base-300 font-bold cursor-pointer"
           type="submit"
           name="Login"
         />
-        <p className="flex flex-row justify-center items-center gap-2 text-black">
+        <p className="flex flex-row justify-center items-center gap-2 text-black text-sm md:text-base">
           <span>Don`t have an account?</span>
           <Link
             to="/users/signUp"
