@@ -25,7 +25,7 @@ const ViewDetails = () => {
 
   return (
     <div>
-      <div className="bg-[#9538e2] h-[250px] md:h-[300px] lg:h-[350px] text-center pt-6 px-4 space-y-3 mt-4">
+      <div className="bg-[#9538e2] h-[250px] md:h-[300px] lg:h-[350px] text-center pt-6 px-4 space-y-3 mt-4 mb-4">
         <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold text-white px-1 mt-2 md:mt-4">
           Product Details
         </h1>
