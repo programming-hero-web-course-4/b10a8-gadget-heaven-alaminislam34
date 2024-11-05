@@ -192,7 +192,7 @@ const Navbar = () => {
             {isTrue ? (
               <div
                 tabIndex={0}
-                className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-40"
+                className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-40 z-30"
               >
                 <h1 className="text-base md:text-lg text-left font-bold text-black">
                   {liked.length} Items in WishList
