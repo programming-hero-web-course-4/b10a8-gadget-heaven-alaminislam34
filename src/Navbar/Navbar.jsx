@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FiHeart } from "react-icons/fi";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { ProductContext } from "../Pages/ProductContext";
+import "./Navbar.css";
 
 const Navbar = () => {
   const { products, liked, total, id } = useContext(ProductContext);
@@ -17,7 +18,10 @@ const Navbar = () => {
 
   const navigate = useNavigate();
   const handleDashboard = () => {
-    navigate("/dashboard");
+    navigate("/dashboard/cart");
+  };
+  const handleWishlist = () => {
+    navigate("/dashboard/wishlist");
   };
   useEffect(() => {
     switch (location.pathname) {
@@ -35,6 +39,14 @@ const Navbar = () => {
         break;
       case `/viewDetails/${id}`:
         document.title = "Gadget Heaven";
+        setHome(false);
+        break;
+      case "/dashboard/cart":
+        document.title = "Dashboard || Gadget Heaven";
+        setHome(false);
+        break;
+      case "/dashboard/wish":
+        document.title = "Dashboard || Gadget Heaven";
         setHome(false);
         break;
       case "/":
@@ -65,8 +77,8 @@ const Navbar = () => {
     >
       <div
         className={`navbar  max-w-6xl mx-auto ${
-          isHome ? "bg-[#9538e2] text-white rounded-t-xl" : ""
-        } `}
+          isHome ? "bg-[#9538e2] text-white " : ""
+        } ${isSticky ? "rounded-none" : "rounded-t-xl"} `}
       >
         <div className="navbar-start">
           <div className="dropdown">
@@ -101,18 +113,22 @@ const Navbar = () => {
             Gadget Heaven
           </NavLink>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
+        <div className=" navbar-center hidden lg:flex">
+          <ul
+            className={`${
+              isHome ? "" : "Navbar_item"
+            } flex flex-row gap-4 px-1`}
+          >
+            <li className={`font-semibold ${isHome ? "underlined_text" : ""}`}>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li>
+            <li className={`font-semibold `}>
               <NavLink to="/statistics">Statistics</NavLink>
             </li>
-            <li>
+            <li className={`font-semibold `}>
               <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
-            <li>
+            <li className={`font-semibold `}>
               <NavLink to="/unknown">Unknown</NavLink>
             </li>
           </ul>
@@ -146,7 +162,7 @@ const Navbar = () => {
                 </h1>
                 <div className="divider"></div>
                 <p className="font-semibold text-[#9538E2]">
-                  Subtotal: {total}k
+                  Subtotal: {total} BDT
                 </p>
                 <button
                   onClick={handleDashboard}
@@ -175,11 +191,18 @@ const Navbar = () => {
             {isTrue ? (
               <div
                 tabIndex={0}
-                className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-[150px]"
+                className="dropdown-content bg-white shadow-xl p-4 rounded-lg w-40"
               >
                 <h1 className="text-lg text-center font-bold text-black">
-                  {liked.length} liked items
+                  {liked.length} Items in WishList
                 </h1>
+                <div className="divider"></div>
+                <button
+                  onClick={handleWishlist}
+                  className="py-1 md:py-2 px-2 md:px-4 rounded-full bg-[#9538E2] text-white font-semibold"
+                >
+                  WishList
+                </button>
               </div>
             ) : (
               ""

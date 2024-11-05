@@ -5,6 +5,8 @@ import Statistics from "../Pages/Statistics";
 import Dashboard from "../Pages/Dashboard";
 import Unknown from "../Pages/Unknown";
 import ViewDetails from "../Pages/ViewDetails";
+import Cart from "../Pages/Cart";
+import WishList from "../Pages/WishList";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +25,16 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        children: [
+          {
+            path: "/dashboard/cart",
+            element: <Cart />,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <WishList />,
+          },
+        ],
       },
       {
         path: "/unknown",

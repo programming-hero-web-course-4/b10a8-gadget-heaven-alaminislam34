@@ -63,7 +63,7 @@ const Home = () => {
                 </figure>
                 <div className="p-4 space-y-2">
                   <h2 className="card-title">{p.product_title}</h2>
-                  <p>Price: {p.price} $</p>
+                  <p>Price: {p.price} BDT</p>
                   <button
                     onClick={() => handleProductsDetails(p.product_id)}
                     className="py-2 px-4 rounded-full border duration-300 border-[#9538e2] text-[#9538e2] hover:bg-[#9538e2] hover:text-white"

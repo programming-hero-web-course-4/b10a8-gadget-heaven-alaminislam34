@@ -58,6 +58,8 @@ const ProductProvider = ({ children }) => {
         handleDetailsId,
         id,
         setProducts,
+        setLiked,
+        setTotal,
       }}
     >
       {children}

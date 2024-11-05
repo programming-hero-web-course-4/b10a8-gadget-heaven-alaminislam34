@@ -1,0 +1,11 @@
+.Navbar_item a.active{
+    color: #9538E2;
+    text-decoration: underline;
+    text-decoration-color: #9538E2;
+    text-decoration-thickness: 2px;
+}
+.underlined_text {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+}

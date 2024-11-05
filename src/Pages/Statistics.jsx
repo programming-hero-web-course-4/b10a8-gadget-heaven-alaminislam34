@@ -11,7 +11,6 @@ import {
 
 const Statistics = () => {
   const product = useLoaderData();
-  console.log(product);
   return (
     <div>
       <div className="bg-[#9538e2] text-center p-4 md:p-8 lg:p-8 space-y-3 w-full">
