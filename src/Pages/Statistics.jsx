@@ -17,7 +17,7 @@ const Statistics = () => {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
           Statistics
         </h1>
-        <p className="text-white md:w-8/12 mx-auto">
+        <p className="text-white text-sm md:text-base md:w-8/12 mx-auto">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>

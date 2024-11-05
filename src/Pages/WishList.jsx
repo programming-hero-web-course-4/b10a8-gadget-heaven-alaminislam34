@@ -12,7 +12,7 @@ const WishList = () => {
   };
   return (
     <div>
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-4 md:my-6">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold my-4 md:my-8 lg:my-12">
         Wishlist
       </h2>
       <div className=" flex flex-col gap-4 my-4 md:my-6">

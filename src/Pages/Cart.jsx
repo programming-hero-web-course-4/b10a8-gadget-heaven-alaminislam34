@@ -30,10 +30,10 @@ const Cart = () => {
   };
   return (
     <div>
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center ">
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold">Cart</h2>
-        <div className="flex gap-2 items-center">
-          <h4 className="text-lg md:text-xl font-bold">
+        <div className="flex flex-col md:flex-row gap-2 items-center">
+          <h4 className="text-base md:text-lg font-bold">
             Total Cost: {total} BDT
           </h4>
           <div className="flex flex-row gap-2 items-center justify-center">

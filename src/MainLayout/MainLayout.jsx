@@ -5,13 +5,15 @@ import Navbar from "../Navbar/Navbar";
 const MainLayout = () => {
   return (
     <div>
-      <Navbar />
-      <section className="max-w-6xl mx-auto">
-        <section className="">
-          <Outlet />
+      <section className="">
+        <Navbar />
+        <section className="max-w-6xl mx-auto min-h-[40vh]">
+          <section className="">
+            <Outlet />
+          </section>
         </section>
+        <Footer />
       </section>
-      <Footer />
     </div>
   );
 };
