@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "./ProductContext";
 import { RxCrossCircled } from "react-icons/rx";
-import { toast, ToastContainer } from "react-toastify";
-import { ImCross } from "react-icons/im";
+import { ToastContainer } from "react-toastify";
 
 const WishList = () => {
   const { liked, setLiked, handleProduct } = useContext(ProductContext);
@@ -10,12 +9,6 @@ const WishList = () => {
   const handleRemoveCartItem = (id) => {
     const remainingProducts = liked.filter((p) => p.product_id !== id);
     setLiked(remainingProducts);
-    toast(
-      <div className="flex gap-2 items-center">
-        <ImCross className="text-red-500" />
-        <p>Removed item</p>
-      </div>
-    );
   };
   return (
     <div>
