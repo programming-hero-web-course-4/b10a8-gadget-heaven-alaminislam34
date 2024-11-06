@@ -138,9 +138,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end flex flex-row gap-2 md:gap-4">
+        <div className="navbar-end flex flex-row gap-2 md:gap-4 items-center">
           <div
-            className="bg-white tooltip tooltip-left hover:bg-[#9538e2] hover:text-white h-8 w-8 rounded-full flex justify-center items-center text-black text-xl font-bold"
+            className="bg-base-300 tooltip tooltip-left hover:bg-[#9538e2] hover:text-white md:h-8 md:w-8 w-[26px] h-[26px] rounded-full flex justify-center items-center text-black md:text-xl text-sm font-bold cursor-pointer"
             data-tip={mainBalance}
           >
             <p className="">৳</p>
