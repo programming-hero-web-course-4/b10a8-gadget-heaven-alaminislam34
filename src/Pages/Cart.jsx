@@ -6,8 +6,13 @@ import { ImCross } from "react-icons/im";
 import { FaSortAmountDown } from "react-icons/fa";
 import success from "../assets/Group.png";
 import { PiEmptyBold } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate("/");
+  };
   const { products, setProducts, total, setTotal } = useContext(ProductContext);
   const handleRemoveCartItem = (id, price) => {
     const remainingTotal = total - price;
@@ -76,8 +81,13 @@ const Cart = () => {
             <p className="font-medium text-black/70">Total: {total} BDT</p>
             <div className="modal-action">
               <form method="dialog">
-                <button onClick={() => setTotal(0)} className="btn">
-                  Close
+                <button
+                  onClick={() => {
+                    setTotal(0), goToHome();
+                  }}
+                  className="btn"
+                >
+                  Ok
                 </button>
               </form>
             </div>
