@@ -7,13 +7,15 @@ import { FaSortAmountDown } from "react-icons/fa";
 import success from "../assets/Group.png";
 import { PiEmptyBold } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
+import { BiSolidErrorAlt } from "react-icons/bi";
 
 const Cart = () => {
   const navigate = useNavigate();
   const goToHome = () => {
     navigate("/");
   };
-  const { products, setProducts, total, setTotal } = useContext(ProductContext);
+  const { products, setProducts, total, setTotal, mainBalance, setBalance } =
+    useContext(ProductContext);
   const handleRemoveCartItem = (id, price) => {
     const remainingTotal = total - price;
     setTotal(remainingTotal);
@@ -35,8 +37,19 @@ const Cart = () => {
         </div>
       );
     } else {
-      document.getElementById("my_modal_5").showModal();
-      setProducts([]);
+      if (mainBalance > total) {
+        setProducts([]);
+        document.getElementById("my_modal_5").showModal();
+        const remainingBalance = mainBalance - total;
+        setBalance(remainingBalance);
+      } else {
+        toast(
+          <div className="flex flex-row gap-2 items-center">
+            <BiSolidErrorAlt className="text-red-500 text-lg" />
+            <p>Insufficient Balance</p>
+          </div>
+        );
+      }
     }
   };
   const handleSortByPrice = () => {

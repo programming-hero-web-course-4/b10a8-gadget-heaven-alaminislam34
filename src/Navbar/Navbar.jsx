@@ -10,7 +10,8 @@ import "./Navbar.css";
 import { FaRegCircleUser } from "react-icons/fa6";
 
 const Navbar = () => {
-  const { products, liked, total, id } = useContext(ProductContext);
+  const { products, liked, total, id, mainBalance } =
+    useContext(ProductContext);
   const [active, setActive] = useState(false);
   const [isTrue, setTrue] = useState(false);
   const location = useLocation();
@@ -75,12 +76,14 @@ const Navbar = () => {
   }, []);
   return (
     <div
-      className={`mt-6 left-0 top-0 mx-auto duration-500 w-full ${
+      className={` ${
+        isHome ? "mt-6" : "mt-0"
+      } left-0 top-0 mx-auto duration-700 w-full ${
         isSticky ? "sticky bg-white/30 z-50 backdrop-blur-2xl" : ""
       }`}
     >
       <div
-        className={`navbar  max-w-6xl mx-auto p-3 ${
+        className={`navbar  max-w-6xl mx-auto p-3 md:p-4 ${
           isHome ? "bg-[#9538e2] text-white " : ""
         } ${isSticky ? "rounded-none" : "rounded-t-xl"} `}
       >
@@ -90,7 +93,7 @@ const Navbar = () => {
               onClick={() => setActive(!active)}
               tabIndex={0}
               role="button"
-              className="p-2 rounded-full lg:hidden"
+              className="p-2 rounded-full md:hidden"
             >
               {active ? <RxCross2 /> : <RiMenu2Fill />}
             </div>
@@ -110,28 +113,38 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <NavLink to="/" className="md:text-xl font-bold ">
+          <NavLink to="/" className="md:text-xl lg:text-2xl font-bold">
             Gadget Heaven
           </NavLink>
         </div>
-        <div className=" navbar-center hidden lg:flex">
+        <div className=" navbar-center hidden md:flex">
           <ul
             className={`${
               isHome ? "" : "Navbar_item"
             } flex flex-row gap-4 px-1`}
           >
-            <li className={`font-semibold ${isHome ? "underlined_text" : ""}`}>
+            <li
+              className={`font-medium text-sm lg:text-base ${
+                isHome ? "underlined_text" : ""
+              }`}
+            >
               <NavLink to="/">Home</NavLink>
             </li>
-            <li className={`font-semibold `}>
+            <li className={`font-medium text-sm lg:text-base `}>
               <NavLink to="/statistics">Statistics</NavLink>
             </li>
-            <li className={`font-semibold `}>
+            <li className={`font-medium text-sm lg:text-base `}>
               <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end flex flex-row gap-2 md:gap-4">
+          <div
+            className="bg-white tooltip tooltip-left hover:bg-[#9538e2] hover:text-white h-8 w-8 rounded-full flex justify-center items-center text-black text-xl font-bold"
+            data-tip={mainBalance}
+          >
+            <p className="">৳</p>
+          </div>
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -140,7 +153,7 @@ const Navbar = () => {
               className=""
             >
               <button className="relative p-1 md:p-2 border hover:border-white bg-gray-200 duration-300 rounded-full hover:text-white text-black hover:bg-[#9538e2]">
-                <GiShoppingCart className="md:text-2xl text-lg" />
+                <GiShoppingCart className="md:text-xl text-lg" />
               </button>
               {products.length !== 0 ? (
                 <span className="h-5 w-5 rounded-full bg-[#9538e2] text-white font-bold flex justify-center items-center absolute -top-2 -right-2">
@@ -178,7 +191,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <div tabIndex={0} role="button" onClick={() => setTrue(!isTrue)}>
               <button className="relative p-1 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full flex justify-center items-center">
-                <FiHeart className="md:text-2xl text-lg" />
+                <FiHeart className="md:text-xl text-lg" />
               </button>
               {liked.length === 0 ? (
                 ""
@@ -215,7 +228,7 @@ const Navbar = () => {
               onClick={handleUsers}
               className="relative p-1 md:p-2 hover:text-white border hover:border-white text-black hover:bg-[#9538e2] duration-300 bg-gray-200 rounded-full"
             >
-              <FaRegCircleUser className="md:text-2xl text-lg" />
+              <FaRegCircleUser className="md:text-xl text-lg" />
             </button>
           </div>
         </div>

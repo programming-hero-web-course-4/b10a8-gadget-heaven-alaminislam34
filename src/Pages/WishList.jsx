@@ -4,11 +4,17 @@ import { RxCrossCircled } from "react-icons/rx";
 import { ToastContainer } from "react-toastify";
 
 const WishList = () => {
-  const { liked, setLiked, handleProduct } = useContext(ProductContext);
+  const { liked, setLiked, handleProduct, products } =
+    useContext(ProductContext);
 
   const handleRemoveCartItem = (id) => {
     const remainingProducts = liked.filter((p) => p.product_id !== id);
-    setLiked(remainingProducts);
+    const available = products.find((p) => p.product_id === id);
+    if (available) {
+      return;
+    } else {
+      setLiked(remainingProducts);
+    }
   };
   return (
     <div>

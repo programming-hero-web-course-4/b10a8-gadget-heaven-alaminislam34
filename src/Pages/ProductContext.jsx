@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ImCross } from "react-icons/im";
 import { FaCheckCircle, FaHeart } from "react-icons/fa";
+import { BiSolidErrorAlt } from "react-icons/bi";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const ProductContext = createContext();
@@ -12,6 +13,8 @@ const ProductProvider = ({ children }) => {
   const [liked, setLiked] = useState([]);
   const [total, setTotal] = useState(0);
   const [id, setId] = useState();
+  const [mainBalance, setBalance] = useState(500000);
+
   const handleDetailsId = (id) => {
     setId(id);
   };
@@ -41,19 +44,32 @@ const ProductProvider = ({ children }) => {
     if (available) {
       toast(
         <div className="flex justify-start gap-2 items-center font-semibold ">
-          <ImCross className="text-red-500 text-2xl" />
+          <ImCross className="text-red-500 text-lg" />
           Already added..
         </div>
       );
     } else {
-      setProducts((prevProducts) => [...prevProducts, product]);
-      setTotal((p) => p + product.price);
-      toast(
-        <p className="font-semibold flex items-center gap-2 ">
-          <FaCheckCircle className="text-[#9538E2] text-2xl" />
-          Add to Cart
-        </p>
-      );
+      setTotal((prevTotal) => {
+        if (prevTotal + product.price < 500000) {
+          setProducts((prevProducts) => [...prevProducts, product]);
+          toast(
+            <p className="font-semibold flex items-center gap-2 ">
+              <FaCheckCircle className="text-[#9538E2] text-2xl" />
+              Add to Cart
+            </p>
+          );
+          return prevTotal + product.price;
+        } else {
+          toast(
+            <div className="flex flex-row gap-2 items-center">
+              <BiSolidErrorAlt className="text-red-500 text-lg" />
+
+              <p>Insufficient Balance</p>
+            </div>
+          );
+          return prevTotal;
+        }
+      });
     }
   };
   return (
@@ -69,6 +85,8 @@ const ProductProvider = ({ children }) => {
         setProducts,
         setLiked,
         setTotal,
+        mainBalance,
+        setBalance,
       }}
     >
       {children}

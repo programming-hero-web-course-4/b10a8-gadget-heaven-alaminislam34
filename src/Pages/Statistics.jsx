@@ -29,7 +29,7 @@ const Statistics = () => {
         <div className="md:h-[60vh] h-[40vh]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart width={150} height={40} data={product} barSize={29}>
-              <Bar dataKey="price" fill="#8884d8" />
+              <Bar dataKey="price" fill="#9538e2" />
               <XAxis className="text-xs" dataKey="product_title" />
               <YAxis className="text-xs " />
               <Legend />
