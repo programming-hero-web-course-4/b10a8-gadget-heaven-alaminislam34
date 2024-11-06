@@ -81,9 +81,8 @@ const ViewDetails = () => {
             <div className="flex flex-row gap-2 justify-start items-center">
               <button
                 id="addToCart"
-                disabled={!availability}
                 onClick={() => handleProduct(viewGadget)}
-                className={`text-sm md:text-base py-1 px-3 rounded-full border border-[#9538E2] hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white`}
+                className={` cursor-pointer text-sm md:text-base py-1 px-3 rounded-full border border-[#9538E2] hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white`}
               >
                 Add to Card
               </button>

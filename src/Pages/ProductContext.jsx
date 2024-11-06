@@ -40,36 +40,49 @@ const ProductProvider = ({ children }) => {
     return;
   };
   const handleProduct = (product) => {
-    const available = products.find((p) => p.product_id === product.product_id);
-    if (available) {
+    const outStock = product.availability === false;
+    // console.log(outStock);
+    if (outStock) {
       toast(
-        <div className="flex justify-start gap-2 items-center font-semibold ">
-          <ImCross className="text-red-500 text-lg" />
-          Already added..
+        <div className="flex flex-row items-center gap-2">
+          <BiSolidErrorAlt className="text-red-500 text-lg" />
+          <p>Product is out of stock</p>
         </div>
       );
     } else {
-      setTotal((prevTotal) => {
-        if (prevTotal + product.price < 500000) {
-          setProducts((prevProducts) => [...prevProducts, product]);
-          toast(
-            <p className="font-semibold flex items-center gap-2 ">
-              <FaCheckCircle className="text-[#9538E2] text-2xl" />
-              Add to Cart
-            </p>
-          );
-          return prevTotal + product.price;
-        } else {
-          toast(
-            <div className="flex flex-row gap-2 items-center">
-              <BiSolidErrorAlt className="text-red-500 text-lg" />
+      const available = products.find(
+        (p) => p.product_id === product.product_id
+      );
+      if (available) {
+        toast(
+          <div className="flex justify-start gap-2 items-center font-semibold ">
+            <ImCross className="text-red-500 text-lg" />
+            Already added..
+          </div>
+        );
+      } else {
+        setTotal((prevTotal) => {
+          if (prevTotal + product.price < 500000) {
+            setProducts((prevProducts) => [...prevProducts, product]);
+            toast(
+              <p className="font-semibold flex items-center gap-2 ">
+                <FaCheckCircle className="text-[#9538E2] text-2xl" />
+                Add to Cart
+              </p>
+            );
+            return prevTotal + product.price;
+          } else {
+            toast(
+              <div className="flex flex-row gap-2 items-center">
+                <BiSolidErrorAlt className="text-red-500 text-lg" />
 
-              <p>Insufficient Balance</p>
-            </div>
-          );
-          return prevTotal;
-        }
-      });
+                <p>Insufficient Balance</p>
+              </div>
+            );
+            return prevTotal;
+          }
+        });
+      }
     }
   };
   return (

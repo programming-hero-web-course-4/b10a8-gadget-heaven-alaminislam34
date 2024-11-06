@@ -7,13 +7,18 @@ const WishList = () => {
   const { liked, setLiked, handleProduct, products } =
     useContext(ProductContext);
 
-  const handleRemoveCartItem = (id) => {
-    const remainingProducts = liked.filter((p) => p.product_id !== id);
-    const available = products.find((p) => p.product_id === id);
-    if (available) {
+  const handleRemoveCartItem = (id, avail) => {
+    const outStock = avail === false;
+    if (outStock) {
       return;
     } else {
-      setLiked(remainingProducts);
+      const remainingProducts = liked.filter((p) => p.product_id !== id);
+      const available = products.find((p) => p.product_id === id);
+      if (available) {
+        return;
+      } else {
+        setLiked(remainingProducts);
+      }
     }
   };
   return (
@@ -42,7 +47,10 @@ const WishList = () => {
               <button
                 onClick={() => {
                   handleProduct(product),
-                    handleRemoveCartItem(product.product_id);
+                    handleRemoveCartItem(
+                      product.product_id,
+                      product.availability
+                    );
                 }}
                 className="py-1.5 md:py-2 px-4 md:px-6 rounded-full border border-[#9538E2] hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white text-xs md:text-sm lg:text-base"
               >
