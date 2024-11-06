@@ -2,7 +2,7 @@
 
 #### live link : https://gadget-barii.netlify.app/
 
-#### Requirement file: file:///C:/Projects/gadget-heaven-with-react/Batch-10_Assignment-08.pdf
+### [Batch-10_Assignment-08.pdf](file:///C:/Projects/gadget-heaven-with-react/Batch-10_Assignment-08.pdf)
 
 Introducing a cutting-edge online gadget store featuring the latest in tech! Our platform offers a diverse selection of gadgets, organized by category for easy browsing. Each product page includes detailed specifications to give customers a clear insight before making a purchase, Plus, with our wishlit fearture, customers can save their favorite items to review or buy later-making shopping as convenient as it is enjoyable.
 
